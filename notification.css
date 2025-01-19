@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+}
+
+.sidebar {
+ width: 20%;
+background: #fff;
+padding: 20px;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+position: fixed;
+}
+
+.sidebar img {
+width: 60%;
+margin-left: 25px;
+}
+.sidebar ul {
+ list-style: none;
+padding: 0;
+}
+ .sidebar ul li {
+display: flex;
+align-items: center;
+padding: 15px 0;
+font-size: 18px;
+}
+.sidebar ul li img {
+ width: 24px;
+height: 24px;
+margin-right: 10px;
+}
+.sidebar ul li a {
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+.sidebar ul li a:hover {
+color: #0095f6;
+}
+.content {
+    width: 80%;
+    flex-grow: 1;
+    padding: 20px;
+    position: absolute;
+    left: 20%;
+}
+
+.notifications-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.notification:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: #ccc;
+}
+
+.notification-text {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.time {
+    font-size: 14px;
+    color: #8e8e8e;
+}

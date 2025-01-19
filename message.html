@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messenger</title>
+  <link rel="stylesheet" href="message.css">
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="logo"><img src="instagram.png" alt=""></div>
+      <ul>
+        <a href="home.html"><img src="home.png" alt="Home"></a>
+        <a href="#"><img src="search.png" alt="Search"></a>
+        <a href="#"><img src="Explore.png" alt="Explore"></a>
+        <a href="reels.html"><img src="reels.png" alt="Reels"></a>
+        <a href="message.html"><img src="messenger.png" alt="Messages"></a>
+        <a href="notification.html"><img src="heart.png" alt="Notifications"></a>
+        <a href="#"><img src="add.png" alt="Create"></li>
+        <a href="profile.html"><img src="main.jpg" alt="Profile" style="border-radius: 50%;"></a>
+        <div>
+          <a href="#"><img src="more.png" alt="More"></a>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <div class="chat-list">
+        <div class="chat-header">
+          <span>santhosh.kumar.113</span>
+          <img src="write.png" alt="Settings">
+        </div>
+        <div class="chat-tabs">
+          <span class="active">Primary</span>
+          <span>General</span>
+          <span>Requests</span>
+        </div>
+        <div class="chats">
+          <div class="chat-item" onclick="openChat('Santosh Kumar')">
+            <img src="post_02.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">Santosh Kumar</span>
+              <span class="status">Active 45m ago</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('Shivam Kumar')">
+            <img src="post_06.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">Shivam Kumar</span>
+              <span class="status">Hello. 3m</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('Vishal')">
+            <img src="story02.png" alt="Profile">
+            <div class="chat-info">
+              <span class="name">Vishal</span>
+              <span class="status">Active 1h ago</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('Gurmeet')">
+            <img src="story03.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">Gurmeet</span>
+              <span class="status">Active 2m</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('Sandesh')">
+            <img src="story04.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">Sandesh</span>
+              <span class="status">Active 28m ago</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('Group')">
+            <img src="main.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">Group</span>
+              <span class="status">7 active today</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('DHA Suffa')">
+            <img src="dsu.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">DHA Suffa</span>
+              <span class="status">22 active today</span>
+            </div>
+          </div>
+          <div class="chat-item" onclick="openChat('S.S.V')">
+            <img src="post_01.jpg" alt="Profile">
+            <div class="chat-info">
+              <span class="name">S.S.V</span>
+              <span class="status">Active 8h ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message-section">
+        <div class="empty-message">
+          <img src="msg.png" alt="Messenger" style="height: 120px;width: 120px;">
+          <h2>Your messages</h2>
+          <p>Send a message to start a chat.</p>
+          <button>Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openChat(name) {
+      const messageSection = document.querySelector('.message-section .empty-message');
+      messageSection.innerHTML = `
+        <h2>Chat with ${name}</h2>
+        <p>Start a conversation with ${name}.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <textarea placeholder="Type a message..." style="width:800px;border-radius:6px;"></textarea>
+      `;
+    }
+  </script>
+</body>
+</html>
